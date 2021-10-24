@@ -27,7 +27,7 @@ public class RestauranteController {
         }
     }
 
-    @GetMapping(value="/restaurante?restricao={restricao}")
+    @GetMapping(value="/restaurante")
     public ResponseEntity<List<Restaurante>> buscarRestaurantesRestricao(@PathParam("restricao") String restricao){
         try{
             List<Restaurante> restaurantesComRestricao = service.buscarRestaurantesRestricao(restricao);
