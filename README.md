@@ -3,6 +3,8 @@
 
 Uma API para funcionar como backend para um sistema que lista restaurantes e salva quais restrições alimentares aquele restaurante está capacitado para atender.
 
+Atualmente ela está funcionando apenas com banco de dados H2, em memória, então toda vez que parar é necessário incluir novamente os restaurantes.
+
 
 ## Referência da API
 
