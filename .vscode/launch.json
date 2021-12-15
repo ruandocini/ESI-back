@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Python",
+            "type": "python",
+            "request": "launch",
+            "env": {
+                "SCOOPUS_API": "37e2dd5f266836a649c824780a81717e"
+            }
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ApiApplication<api>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "br.com.podcome.api.ApiApplication",
+            "projectName": "api",
+            "args": ""
+        }
+    ]
+}

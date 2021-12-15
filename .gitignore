@@ -4,6 +4,7 @@
 *.factorypath
 .project
 .prefs
+.json
 
 # Log file
 *.log

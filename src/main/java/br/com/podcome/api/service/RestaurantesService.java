@@ -17,7 +17,7 @@ public class RestaurantesService {
     public List<Restaurante> buscarRestaurantesRestricao(String restricao){
 
         List<Restaurante> restaurantesCadastrados = repository.findAll();
-
+        
         List<Restaurante> restaurantesRestricao = new ArrayList<>();
         for (Restaurante restaurante: restaurantesCadastrados
              ) {
