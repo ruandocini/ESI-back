@@ -35,10 +35,14 @@ public class Restaurante {
     @NotNull
     private Boolean temEntrega;
 
+    @NotNull
+    private String contato;
+    
+
     public Restaurante() {
     }
 
-    public Restaurante(String nome, String endereco, String restricao, Float latitude, Float longitude, String preco, Float nota, Boolean temEntrega) {
+    public Restaurante(String nome, String endereco, String restricao, Float latitude, Float longitude, String preco, Float nota, Boolean temEntrega, String contato) {
         this.nome = nome;
         this.endereco = endereco;
         this.restricao = restricao;
@@ -47,6 +51,7 @@ public class Restaurante {
         this.preco = preco;
         this.nota = nota;
         this.temEntrega = temEntrega;
+        this.contato = contato;
     }
 
     public String getNome() {
@@ -111,5 +116,13 @@ public class Restaurante {
 
     public void setTemEntrega(Boolean temEntrega) {
         this.temEntrega = temEntrega;
+    }
+
+    public String getContato() {
+        return contato;
+    }
+
+    public void setContato(String contato) {
+        this.contato = contato;
     }
 }
