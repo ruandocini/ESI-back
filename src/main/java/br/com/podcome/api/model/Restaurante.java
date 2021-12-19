@@ -61,11 +61,6 @@ public class Restaurante {
         this.senha = senha;
     }
 
-    public void Login(String usuario, String senha) {
-        this.usuario = usuario;
-        this.senha = senha;
-    }
-
     public String getNome() {
         return nome;
     }
