@@ -37,12 +37,17 @@ public class Restaurante {
 
     @NotNull
     private String contato;
+
+    @NotNull
+    private String usuario;
     
+    @NotNull
+    private String senha;
 
     public Restaurante() {
     }
 
-    public Restaurante(String nome, String endereco, String restricao, Float latitude, Float longitude, String preco, Float nota, Boolean temEntrega, String contato) {
+    public Restaurante(String nome, String endereco, String restricao, Float latitude, Float longitude, String preco, Float nota, Boolean temEntrega, String contato, String usuario, String senha) {
         this.nome = nome;
         this.endereco = endereco;
         this.restricao = restricao;
@@ -52,6 +57,13 @@ public class Restaurante {
         this.nota = nota;
         this.temEntrega = temEntrega;
         this.contato = contato;
+        this.usuario = usuario;
+        this.senha = senha;
+    }
+
+    public void Login(String usuario, String senha) {
+        this.usuario = usuario;
+        this.senha = senha;
     }
 
     public String getNome() {
@@ -124,5 +136,21 @@ public class Restaurante {
 
     public void setContato(String contato) {
         this.contato = contato;
+    }
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+    public String getSenha() {
+        return senha;
     }
 }
